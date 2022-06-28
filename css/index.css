@@ -494,11 +494,11 @@ background-color: var(--dark-bg-color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-bottom: 22px;
-  padding-top: 16px;
+  padding: 40px;
+  
 
-  min-width: 538px;
-  min-height: 581px;
+  width: 538px;
+  height: 581px;
   background-color: #fff;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -516,6 +516,8 @@ background-color: var(--dark-bg-color);
 
 .close-modal {
   position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -525,7 +527,7 @@ background-color: var(--dark-bg-color);
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
-  
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,11 +538,17 @@ background-color: var(--dark-bg-color);
 }
 
 .icon-close-black {
-  fill: black;
+  fill: currentColor;
 }
 
-.icon-close-black-black:hover,
-.icon-close-black-black:focus {
+    .close-modal.item:hover {
+      color:#2196f3;
+    }
+
+
+
+.icon-close-black:hover,
+.icon-close-black:focus {
   fill: var(--accent-color);
 }
 
@@ -552,6 +560,7 @@ background-color: var(--dark-bg-color);
 
 
 .form-title {
+  margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -689,20 +698,34 @@ background-color: var(--dark-bg-color);
   height: 15px;
   border: 2px solid rgb(33, 33, 33);
   border-radius: 2px;
-}
-
-
-
-.checkbox:checked + .checkbox-icon {
-  display: inline-block;
-  border-color: transparent;
-  background-image: url(../images/icon-icon-check-1.svg);
-  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+ 
+ 
+  
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-size: contain;
   background-position: center;
 }
+
+
+.checkbox:checked + .checkbox-icon{
+  border-color: transparent;
+  background-color: var(--accent-color);
+}
+
+
+
+
+.checkbox:focus + .checkbox-icon {
+      border-color: var(--accent-color);
+  
+  
+  
+}
+
+
+
 
 
 .form-input:hover,
