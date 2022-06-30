@@ -935,6 +935,7 @@ padding-bottom: 0;
 .work-title,.team-title,.client-title {
     font-size: 36px;
     line-height: 1.16;
+    font-weight: 700;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -953,19 +954,21 @@ gap: 30px;
   width: 370px;
   position: absolute;
   bottom: 0;
+  height: 70px;
+  align-items: center;
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1. 14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--first-contrast-text-color);
   background-color: rgba(47, 48, 58, 0.8);
+  align-items: center;
 
   justify-content: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
+ 
 }
 
 
@@ -1283,27 +1286,31 @@ line-height: 19px;
     color: var(--accent-color);
     display: block;
    
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;}
+    
+    margin-bottom: 20px;
+    }
        
     .footer-logo-accent {
         color: var(--first-contrast-text-color);
-      }   
+      } 
+      
+             .address-item {
+               margin-bottom: 9px;
+             }
        
     .footer-address{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom: 9px;
+    
     display: block;    
 }
 
 
 .footer-address-link{
     color: var(--first-contrast-text-color);
-      transition-property: color;
+      transition-property: var(--section-bg-color);
         transition-duration: 250ms;
         transition-timing-function: var(--timing-function);
 
@@ -1404,7 +1411,7 @@ line-height: 19px;
     .footer-form-input {
       width: 360px;
       height: 50px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
       padding-left: 15px;
@@ -1414,11 +1421,20 @@ line-height: 19px;
       transition-property: border;
       transition-duration: 250ms;
       transition-timing-function: var(--timing-function);
+
+
+      
+      
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 4px;
+        
+        color: var(--second-vector-color);
+        
     }
 
     
     .footer-email {
-      margin-left: 95px;
+      margin-left: auto;
     }
 
     .footer-form {
@@ -1437,6 +1453,7 @@ line-height: 19px;
       fill: #fff;
       margin-left: 10px;
       text-align: center;
+     
     }
     
 
