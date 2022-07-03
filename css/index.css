@@ -1452,7 +1452,8 @@ line-height: 19px;
     .icon-send {
       fill: #fff;
       margin-left: 10px;
-      text-align: center;
+      display: flex;
+      align-items: center;
      
     }
     
