@@ -751,7 +751,7 @@ img {
 .features-list .item {
   margin-right: 30px;
   width: 270px;
-  /*min-height: 75px;*/
+  min-height: 75px;
 }
 
 .features-list .item:last-child {
@@ -834,9 +834,10 @@ img {
 
   color: var(--first-contrast-text-color);
   background-color: rgba(47, 48, 58, 0.8);
-  align-items: center;
 
   justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /*--------------------------команда---------------------------*/
