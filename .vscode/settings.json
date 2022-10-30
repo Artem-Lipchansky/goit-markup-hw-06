@@ -1,5 +1,19 @@
 {
-  "cSpell.language": "en,ru",
-  "cSpell.words": ["Cтудия"],
-  "liveServer.settings.port": 5503
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveServer.settings.port": 1239,
+  "liveSassCompile.settings.autoprefix": null,
+  "prettier.bracketSameLine": false
 }
