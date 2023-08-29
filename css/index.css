@@ -124,7 +124,7 @@ display: block;
 
 
 
-.header-page{
+.header{
     background-color: var(--primary-text-color);
     border-bottom: 1px solid #ececec;
 }
