@@ -35,7 +35,7 @@ body {
 
 
 
-.link-current,.link {
+.link-current, .header-link {
     text-decoration: none;
     list-style-type:none;
     }
@@ -82,14 +82,16 @@ body {
     
 }
 
-.container.main {
+
+
+.header-container{
     display: flex;
     align-items: center;
-    
-   
 }
 
-.site-nav.list .link::after{
+
+
+.menu-list .link::after{
 content: '';
 
 display: block;
@@ -104,14 +106,14 @@ border-radius: 2px;
 
 }
 
-.site-nav.list .link:hover::after{
+.menu-list .header-link:hover::after{
 display: block;
 }
 
 
 
 
-.site-nav.list{
+.menu-list{
    
     display: flex;
     gap: 50px;
@@ -154,7 +156,7 @@ letter-spacing: 0.03em;
 color: var(--title-text-color);
  }
 
- .site-nav .link{
+ .navigation .header-link{
 
         font-weight: 500;
         font-size: 14px;
@@ -163,11 +165,11 @@ color: var(--title-text-color);
         
         color: var(--dark-bg-color)
     }
-    .site-nav.list .link{
+    .navigation .header-link{
         position: relative;
     }
 
-    .current.link{
+    .header-link{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -175,8 +177,8 @@ color: var(--title-text-color);
         color: var(--accent-color); 
     }
 
-    .site-nav .link {
-        display: block;
+    .navigation .header-link {
+        
         padding-top: 32px;
         padding-bottom: 32px;}
 
@@ -205,7 +207,7 @@ color: var(--title-text-color);
     
       
         
-    .header-contact .link{
+    .header-contact .header-link{
         
         align-items: center;
        display: flex;
@@ -224,16 +226,16 @@ color: var(--title-text-color);
         } 
     
     
-        .site-nav .link:hover,
-    .header-contact .link:hover,
-    .header-contact .link:hover{
+        .navigation .header-link:hover,
+    .header-contact .header-link:hover,
+    .header-contact .header-link:hover{
             color: var(--accent-color);
             text-align:left;
         }
     
         .header-contact .link:focus,
-    .header-contact .link:focus,
-    .header-contact .link:focus{
+    .header-contact .header-link:focus,
+    .header-contact .header-link:focus{
         fill: var(--accent-color);
         text-align:left;
         
@@ -243,8 +245,8 @@ color: var(--title-text-color);
     
 
     .header-contact .icon:focus,
-     .link:focus .icon,
-     .link:hover .icon{
+     .header-link:focus .icon,
+     .header-link:hover .icon{
         fill: var(--accent-color);
         text-align:left;
         
@@ -414,7 +416,7 @@ color: #FFFFFF;
     display: flex;
 }
 
-.features-list .item{
+.features-list .menu__item{
     margin-right: 30px;
     width: 270px;
     min-height: 75px;
@@ -427,7 +429,7 @@ color: #FFFFFF;
     letter-spacing: 0.03em;
 }
 
-.features-list .item:last-child {
+.features-list .menu__item:last-child {
     margin-right: 0;
     }
 
