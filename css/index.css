@@ -92,19 +92,9 @@ body {
 
 
 
-.header-link .current-link .link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--title-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
- .header-link .current-link::after {
+
+ .menu-list .current-link::after {
     position: absolute;
     content: ' ';
     width: 100%;
@@ -119,6 +109,18 @@ body {
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+ .navigation .link {
+     position: relative;
+     display: block;
+     padding-top: 32px;
+     padding-bottom: 32px;
+     color: var(--title-text-color);
+     font-weight: 500;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 
 .menu-list .header-link:hover::after{
 display: block;
@@ -192,11 +194,7 @@ color: var(--title-text-color);
             
     }
 
-    .navigation .link {
-        
-        padding-top: 32px;
-        padding-bottom: 32px;}
-
+   
     
 
     
