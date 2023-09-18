@@ -89,7 +89,7 @@ body {
 
 
 
-.header-container, .navigation{
+.header__container, .menu{
     display: flex;
     align-items: center;
 }
@@ -99,12 +99,12 @@ body {
 
 
 
- .menu-list .link::after {
+  .menu__link::after {
     position: absolute;
     content: ' ';
     width: 100%;
     height: 4px;
-    transform: scaleX(0);
+    
     background-color: var(--accent-color);
     display: inline-block;
     border-radius: 2px;
@@ -120,7 +120,7 @@ body {
 
 
 
- .menu-list .link {
+ .menu__link {
      position: relative;
      display: block;
      padding-top: 32px;
@@ -133,14 +133,14 @@ body {
      
  }
 
-.menu-list .header-link:hover::after{
+.menu__list .header-link:hover::after{
 display: block;
 }
 
 
 
 
-.menu-list{
+.menu__list{
    
     display: flex;
     gap: 50px;
@@ -161,7 +161,8 @@ display: block;
 
 
 
-.header-logo{
+.logo{
+    display: flex;
     font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
@@ -174,7 +175,7 @@ color: var(--accent-color);
 
 }
 
-.logo-accent{
+.logo__header-text--color-accent{
 font-weight: 700;
 font-size: 42;
 line-height: 1.19;
@@ -193,19 +194,19 @@ color: var(--title-text-color);
 
     
     
-    .header-contact{
+        .contact-list{
         display: flex;
     margin-left: auto;
      gap: 30px;
 
         }
 
-        .header-contact .icon{
+                .contact-list .icon{
             margin-right:   10px;
             
         }
 
-        .header-contact .icon{
+                .contact-list .icon{
            fill: #757575; 
         }
     
@@ -214,7 +215,7 @@ color: var(--title-text-color);
     
       
         
-    .header-contact .header-link {
+        .contact-list .header-link {
         
         align-items: center;
        display: flex;
@@ -226,44 +227,44 @@ color: var(--title-text-color);
         }
        
 
-/* --------------------------------------------------------HOVER------------------------------------------------------- */
+/* -----------------------------------------------------HOVER--------------------------------------------------- */
 
-    .menu-list .link:hover,
-    .menu-list .link:focus {
+        .menu__list .menu__link:hover,
+        .menu__list .menu__link:focus {
         color: var(--accent-color);
     }
         
-     .link.current {
+     .menu__link--current {
         color: var(--accent-color);              
                   }             
         
         
-     .link.current::after {             
+     .menu__link--current::after {             
      opacity: 1;                 
                   }
         
-      .link:hover::after,            
-        .link:focus::after   {        
+      .menu__link:hover::after,            
+     .menu__link:focus::after   {        
          opacity: 1;             
                   }
     
     
-        .logo-accent:hover,
-        .logo-accent:focus{
+        .logo__header-text:hover,
+        .logo__header-text:focus{
     color: var(--accent-color);
         } 
     
     
-        .navigation .header-link:hover,
-    .header-contact .header-link:hover,
-    .header-contact .header-link:hover{
+        .menu .header-link:hover,
+        .contact-list .header-link:hover,
+        .contact-list .header-link:hover{
             color: var(--accent-color);
             text-align:left;
         }
     
-        .header-contact .link:focus,
-    .header-contact .header-link:focus,
-    .header-contact .header-link:focus{
+                .contact-list .menu__link:focus,
+        .contact-list .header-link:focus,
+        .contact-list .header-link:focus{
         fill: var(--accent-color);
         text-align:left;
         
@@ -272,7 +273,7 @@ color: var(--title-text-color);
 
     
 
-    .header-contact .icon:focus,
+        .contact-list .icon:focus,
      .header-link:focus .icon,
      .header-link:hover .icon{
         fill: var(--accent-color);
