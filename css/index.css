@@ -40,7 +40,7 @@ body {
 
 
 
-.current-link, .header-link {
+.current-link, .contact-list__link {
     text-decoration: none;
     list-style-type:none;
     }
@@ -133,7 +133,7 @@ body {
      
  }
 
-.menu__list .header-link:hover::after{
+.menu__list .contact-list__link:hover::after{
 display: block;
 }
 
@@ -215,7 +215,7 @@ color: var(--title-text-color);
     
       
         
-        .contact-list .header-link {
+        .contact-list .contact-list__link {
         
         align-items: center;
        display: flex;
@@ -255,16 +255,16 @@ color: var(--title-text-color);
         } 
     
     
-        .menu .header-link:hover,
-        .contact-list .header-link:hover,
-        .contact-list .header-link:hover{
+        .menu .contact-list__link:hover,
+        .contact-list .contact-list__link:hover,
+        .contact-list .contact-list__link:hover{
             color: var(--accent-color);
             text-align:left;
         }
     
                 .contact-list .menu__link:focus,
-        .contact-list .header-link:focus,
-        .contact-list .header-link:focus{
+        .contact-list .contact-list__link:focus,
+        .contact-list .contact-list__link:focus{
         fill: var(--accent-color);
         text-align:left;
         
@@ -274,8 +274,8 @@ color: var(--title-text-color);
     
 
         .contact-list .icon:focus,
-     .header-link:focus .icon,
-     .header-link:hover .icon{
+     .contact-list__link:focus .icon,
+     .contact-list__link:hover .icon{
         fill: var(--accent-color);
         text-align:left;
         
