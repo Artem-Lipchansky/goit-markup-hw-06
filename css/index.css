@@ -476,9 +476,14 @@ color: #FFFFFF;
 }
 
 .features {
-    padding-top: 94px;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+
+        padding-top: 94px;
+        padding-bottom: 94px;
+    
+}
+
+.features--indent {
+    padding-bottom: 0px;
 }
 
 .features-list .menu__item:last-child {
