@@ -662,7 +662,7 @@ color: #757575;
 /*=============================================TEAM=========================================================*/
 
 .team {
-    background-color: var(--primary-bg-color);
+    background-color: var(--background-color);
     padding-top: 94px;
     padding-bottom: 94px;
 }
