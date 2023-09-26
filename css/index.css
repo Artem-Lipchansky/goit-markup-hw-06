@@ -475,8 +475,30 @@ color: #FFFFFF;
     
 }
 
+
+.works-examples__item{
+    position: relative;
+        width: calc((100% - 60px)/3);
+    
+}
+
 .feature-list__item{
 
+}
+
+
+.works-examples__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 27px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(47, 48, 58, .8);
 }
 
 .features-list .menu__item{
@@ -622,22 +644,7 @@ color: #757575;
 
 }
 
-.picture{
-    
-        
-                    position: absolute;
-                        width: 100%;
-                        bottom: 0;
-                        padding: 27px 0;
-                        text-align: center;
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 1.1428571429;
-                        text-transform: uppercase;
-                        color: #fff;
-                        background-color: rgba(47, 48, 58, .8);
-            
-}
+
 
 
 
