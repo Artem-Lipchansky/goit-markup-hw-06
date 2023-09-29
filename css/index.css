@@ -317,7 +317,7 @@ border-radius: 4px;
         
 
         color: var(--accent-color);
-        background-color: var(--primary-text-color);
+        background-color: var(--primary-bg-color);
 
         padding: 10px 32px 10px 32px;
         color: var(--title-text-color);
@@ -376,7 +376,7 @@ border-radius: 4px;
     .button.primary:hover,
     .button.primary:focus {
      background-color: rgba(24, 140, 232, 1);
-     color: var(--primary-text-color);               
+     color: var(--primary-bg-color);               
         
 }
                  
@@ -800,7 +800,7 @@ color: var(--title-text-color);
     cursor: pointer;
     height: 92px;
     width: calc((1170px - 150px) / 6);
-    background-color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
     border: 1px solid var(--text-color-contrast);
     border-radius: 4px;
     color: var(--text-color-contrast);
@@ -822,7 +822,7 @@ color: var(--title-text-color);
 
 
 .footer {
-    background-color: var(--dark-bg-color);
+    background-color: var(--secondary-bg-color);
     
     padding-top: 62px;
     padding-bottom:  61px;
@@ -855,7 +855,7 @@ font-weight: 700;
 font-size: 42;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: var(--primary-text-color);
+color: var(--primary-bg-color);
 
 }
 
@@ -918,7 +918,7 @@ color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;    
 }
 
-.footer-address-link:hover,
+ .footer-address-link:hover,
 .footer-address-link:focus{
     color: var(--accent-color);
 
@@ -927,7 +927,7 @@ color: rgba(255, 255, 255, 0.6);
 .footer-address-link{
     color: var(--primary-text-color);
 
-}
+} 
 
 .footer-address-contact:hover,
 .footer-address-contact:focus{
@@ -986,7 +986,7 @@ color: var(--accent-color);
 
 .footer-link:hover .footer-icon,
 .footer-link:focus .footer-icon{
-    fill: var(--primary-text-color);
+    fill: var(--primary-bg-color);
 }
 
 
@@ -994,19 +994,28 @@ color: var(--accent-color);
 
 
 .form-subscrip{
-    margin-left: auto;
+
+        display: flex;
+        gap: 12px;
+        margin-left: auto;
+    
 }
 
 .footer-form{
-    display: flex;
+    
+            display: flex;
+            gap: 12px;
+            margin-left: auto;
+        
 }
 
 .footer-email{
     width:358px;
     height: 50px;
     margin-right: 12px;
+    padding: 16px 16px;
     
-    color: var(--primary-text-color);
+    color: var(--primary-bg-color);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1015,7 +1024,7 @@ border-radius: 4px;
 }
 
 .telega-icon{
-    fill: var(--primary-text-color);
+    fill: var(--primary-bg-color);
 }
 
     .footer-form button {
