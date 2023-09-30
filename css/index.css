@@ -313,7 +313,23 @@ border-radius: 4px;
 
     }
 
-    .button{
+    .btn{
+        
+                padding: 0;
+                border: none;
+                border-radius: 4px;
+                font-family: inherit;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.875;
+                letter-spacing: .06em;
+                background-color: #2196f3;
+                color: #fff;
+                cursor: pointer;
+            
+    }
+
+    /* .button{
         
 
         color: var(--accent-color);
@@ -323,11 +339,11 @@ border-radius: 4px;
         color: var(--title-text-color);
         
         
-    }
+    } */
 
    
 
-    .button-list .current,
+    /* .button-list .current, */
     .button.secondary:hover,
     .button.secondary:focus{
         color: var(--primary-text-color);
@@ -336,7 +352,7 @@ border-radius: 4px;
     }
 
 
-    .button-list{
+    /* .button-list{
 
     display: flex;
      margin-bottom: 50px;
@@ -348,33 +364,24 @@ border-radius: 4px;
 
     .button-list .btn+.btn {
         margin-left: 8px;
-         }
+         } */
 
 
 
-.button.primary {
-      color: var(--primary-bg-color);
-     background-color: var(--accent-color);
-     font-weight: 700;
-     line-height: 1.87;
-     display: flex;
-     cursor: pointer;
-     padding: 10px 32px 10px 32px;
-     align-items: center;
-     text-align: center;
-     letter-spacing: 0.06em;
-     margin: auto;
-     font-family: inherit;
-     border-radius: 4px;
+.button__primary {
+    
+            align-self: flex-end;
+            gap: 10px;
+            min-width: 200px;
+            height: 50px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, .15);
         
-     border: transparent;
-     font-size: 16px;
         
         
                  }
         
-    .button.primary:hover,
-    .button.primary:focus {
+    .button__primary:hover,
+    .button__primary:focus {
      background-color: rgba(24, 140, 232, 1);
      color: var(--primary-bg-color);               
         
@@ -954,15 +961,14 @@ color: var(--accent-color);
     background-color: rgb(255,255,255,10%);
 }
 
-.footer-title{    
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 20px;
+.footer-form__title{    
+        display: block;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1428571429;
+            text-transform: uppercase;
+            color: #fff;
 }
 
 
