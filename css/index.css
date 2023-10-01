@@ -942,7 +942,7 @@ color: var(--accent-color);
 
 }
 
-.footer-social{
+.footer__socials-container{
 
     
         
@@ -969,6 +969,17 @@ color: var(--accent-color);
             line-height: 1.1428571429;
             text-transform: uppercase;
             color: #fff;
+}
+
+
+
+.social-container__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 
