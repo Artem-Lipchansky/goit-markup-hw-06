@@ -689,7 +689,7 @@ color: #757575;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.team-title {
+.team__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -698,11 +698,11 @@ color: #757575;
 
 color: #212121;
 }
-.team-list {
+.cards-list {
     display: flex;
     gap: 30px;
 }
-.team-item {
+.team-list__item {
     max-width: 270px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -742,11 +742,11 @@ color: #757575;
    
 }
 
-.peter{
+.team__container{
     padding: 20px 30px;
     
 }
-.team-item{
+.team-list__item{
     width: calc((100% - 60px) / 3);
     background-color: var(--primary-bg-color);
     border: 1px solid #EEEEEE;}
