@@ -684,7 +684,7 @@ color: #757575;
 
 /*=============================================TEAM=========================================================*/
 
-.team {
+.cards-section {
     background-color: var(--background-color);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -698,11 +698,11 @@ color: #757575;
 
 color: #212121;
 }
-.cards-list {
+.social-list {
     display: flex;
     gap: 30px;
 }
-.team-list__item {
+.team__item {
     max-width: 270px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -746,7 +746,7 @@ color: #757575;
     padding: 20px 30px;
     
 }
-.team-list__item{
+.team__item{
     width: calc((100% - 60px) / 3);
     background-color: var(--primary-bg-color);
     border: 1px solid #EEEEEE;}
