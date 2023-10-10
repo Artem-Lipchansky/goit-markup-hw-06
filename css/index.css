@@ -702,6 +702,11 @@ color: #212121;
     display: flex;
     gap: 30px;
 }
+
+.team-list{
+    display: flex;
+    gap: 30px;
+}
 .team__item {
     max-width: 270px;
     background: #FFFFFF;
