@@ -689,7 +689,7 @@ color: #757575;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.team__title {
+.cards__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -700,11 +700,13 @@ color: #212121;
 }
 .social-list {
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    justify-content: center;
 }
 
 .team-list{
     display: flex;
+    
     gap: 30px;
 }
 .team__item {
@@ -739,13 +741,13 @@ letter-spacing: 0.03em;
 
 color: #757575;
 }
-.team__social {
+/* .team__social {
     display: flex;
     justify-content: center;
     gap: 10px;
    
    
-}
+} */
 
 .team__container{
     padding: 20px 30px;
@@ -766,7 +768,7 @@ color: #757575;
     justify-content: center;
 }
 
-.social-icon{
+.social__icon{
     fill: #AFB1B8;
 }
 
