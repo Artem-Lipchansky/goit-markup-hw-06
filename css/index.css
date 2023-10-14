@@ -921,7 +921,7 @@ color: var(--accent-color);
 
 
 
-.footer-address-contact{
+.footer-address__contact{
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         line-height: 1.7142857143;
@@ -972,8 +972,8 @@ color: var(--accent-color);
 
 } 
 
-.footer-address-contact:hover,
-.footer-address-contact:focus{
+.footer-address__contact:hover,
+.footer-address__contact:focus{
 color: var(--accent-color);
 
 }
