@@ -343,7 +343,7 @@ border-radius: 4px;
 
    
 
-    /* .button-list .current, */
+     .button-list
     .button.secondary:hover,
     .button.secondary:focus{
         color: var(--primary-text-color);
@@ -352,7 +352,7 @@ border-radius: 4px;
     }
 
 
-    /* .button-list{
+     .button-list{
 
     display: flex;
      margin-bottom: 50px;
@@ -364,7 +364,7 @@ border-radius: 4px;
 
     .button-list .btn+.btn {
         margin-left: 8px;
-         } */
+         } 
 
 
 
