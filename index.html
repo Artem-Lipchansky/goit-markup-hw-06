@@ -563,47 +563,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
             
             <form class="form">
-             <label class="form__label" for="user-name">
+             <label class="form__label" for="name">
                 Ім'я
                 <span class="form__wrap">
                     <input type="text"
                 class="form__input"
-                name="user-name" required/>
+                name="name" required/>
                 
                 
-               <svg class="modal-input-icon" width="18" height="18">
+               <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
 
           </svg>
                 </span>
 
             </label>
-            <label class="form__label">
+            <label class="form__label" for="tel">
 
 
                 Телефон
                 <span class="form__wrap">
                     <input type="text"
                 class="form__input"
-                name="user-name" required/>
+                tel="tel" required/>
                 
                 
-               <svg class="modal-input-icon" width="18" height="18">
+               <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
 
           </svg>
                 </span>
                 
             </label>
-            <label class="form__label" for="">
+            <label class="form__label" for="email">
                 Пошта
                 <span class="form__wrap">
                     <input type="text"
                 class="form__input"
-                name="user-name" required/>
+                email="email" required/>
                 
                 
-               <svg class="modal-input-icon" width="18" height="18">
+               <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
 
           </svg>
@@ -614,17 +614,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             </label>
 
             
-           <div class="modal-field">
-              <label for="user-text" class="modal-label">Коментар</label>
+           
+              <label class="form__label" for="text">Коментар
                 
                    
-                    <textarea name="user-text" id="user-text" class="modal-comment"  placeholder="Введіть текст"></textarea>
+                    <textarea name="comment" id="text" class="form__textarea"  placeholder="Введіть текст"></textarea>
                
-              </div>
+              </label>
 
-              <div class="modal-check">
+              <label class="agreements" for="privacy">
 
-                <input type="checkbox" class="input-check visually-hidden" name="privacy" value="true" id="privacy"/>
+                <input  class="input-check visually-hidden" name="privacy" value="true" type="checkbox" id="privacy"/>
                 
                 <label for="privacy" class="check-text">
                     
