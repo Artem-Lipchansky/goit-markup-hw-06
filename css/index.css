@@ -134,13 +134,16 @@ body {
 
 
 
+/* =========================================================MENU==================================================== */
 
+.menu__list {
 
-
-.menu__link:hover::after,
-.menu__link:focus::after {
-    transform: scaleX(1)
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
 }
+
+
 
 
 
@@ -200,19 +203,43 @@ body {
              background-color: #2196f3;
          }
 
-.menu__list .contact-list__link:hover::after{
+/* .menu__list .contact-list__link:hover::after{
 display: block;
-}
+} */
+
+
+/* ----------------------------------------------HOVER-MENU---------------------------------------------- */
 
 
 
 
-.menu__list{
-   
-    display: flex;
-    gap: 50px;
-        margin-left: 93px;
-}
+        .menu__list .menu__link:hover,
+        .menu__list .menu__link:focus {
+            color: var(--accent-color);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+    
+    
+        .menu__link--current {
+            color: var(--accent-color);
+        }
+
+                .menu__link:hover::after,
+                .menu__link:focus::after {
+                    transform: scaleX(1)
+                }
+    
+    
+        .menu__link--current::after {
+            opacity: 1;
+        }
+    
+        .menu__link:hover::after,
+        .menu__link:focus::after {
+            opacity: 1;
+    
+        }
 
 
 
@@ -267,28 +294,7 @@ display: block;
 
 /* -----------------------------------------------------HOVER--------------------------------------------------- */
 
-        .menu__list .menu__link:hover,
-        .menu__list .menu__link:focus {
-        color: var(--accent-color);
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-            
-        
-     .menu__link--current {
-        color: var(--accent-color);              
-                  }             
-        
-        
-     .menu__link--current::after {             
-     opacity: 1;                 
-                  }
-        
-      .menu__link:hover::after,            
-     .menu__link:focus::after   {        
-         opacity: 1;  
-           
-                  }
+      
     
     
        
@@ -372,48 +378,7 @@ display: block;
         
     } */
 
-   
-
-     .portfolio-button-list
-    .button.secondary:hover,
-    .button.secondary:focus{
-        color: var(--primary-text-color);
-        background-color: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
-
-
-         .portfolio-button-list {
-             display: flex;
-             justify-content: center;
-             gap: 8px;
-             margin-bottom: 50px;
-         }
-
-                 .portfolio-button-list__button--current {
-                     color: var(--primary-bg-color);
-                     background-color: var(--accent-color);
-                 }
-
-
-                                 .portfolio-button-list__button, 
-                                 .portfolio-button-list__button--current {
-                                     font-family: inherit;
-                                     font-weight: 500;
-                                     font-size: 16px;
-                                     line-height: 1.62;
-                                     letter-spacing: 0.03em;
-                                     padding: 6px 22px;
-                                     border-radius: 4px;
-                                     border-color: transparent;
-                                     color: var(--title-text-color);
-                                     background-color: var(--background-color);
-                                     cursor: pointer;
-                                     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                 }
+                   
 
 
 
@@ -1617,3 +1582,52 @@ fill:  var(--accent-color);
 
 
 
+
+/* ==========================================----------------PORTFOLIO----------------------------======================================== */
+
+
+
+.portfolio-button-list .button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.portfolio-button-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.portfolio-button-list__button--current {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+
+.portfolio-button-list__button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border-color: transparent;
+    color: var(--title-text-color);
+    background-color: var(--background-color);
+    cursor: pointer;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ 
+
+ .portfolio-button-list  .portfolio-button-list__button:hover{
+    
+    color: var(--primary-bg-color);
+            background-color: var(--accent-color);}
