@@ -280,7 +280,7 @@ display: block;
     
       
         
-        .contact-list .contact-list__link {
+         .contact-list__link {
         
         align-items: center;
        display: flex;
@@ -288,7 +288,8 @@ display: block;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #757575;
+            color: currentColor;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
        
 
@@ -301,28 +302,21 @@ display: block;
     
     
         
-        .contact-list .contact-list__link:hover,
-        .contact-list .contact-list__link:hover{
+        .contact-list__link:hover,
+        .contact-list__link:focus{
             color: var(--accent-color);
-            text-align:left;
+            
         }
     
                 
-        .contact-list .contact-list__link:focus,
-        .contact-list .contact-list__link:focus{
-        fill: var(--accent-color);
-        text-align:left;
-        
-    
-    }
+       
 
     
 
         
      .contact-list__link:focus .contact-list__icon,
      .contact-list__link:hover .contact-list__icon{
-        fill: var(--accent-color);
-        text-align:left;
+    fill: currentColor;
         
     
     }
@@ -831,8 +825,13 @@ color: #757575;
 
 
 .client-section{
-     padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
+}
+
+
+.client-list__item{
+        width: calc((100% - 150px)/6);
+            height: 92px;
 }
 
 .client-section__title {
@@ -863,25 +862,113 @@ color: var(--title-text-color);
 
 
 .client-list__size {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    height: 92px;
-    width: calc((1170px - 150px) / 6);
-    background-color: var(--primary-bg-color);
-    border: 1px solid var(--text-color-contrast);
-    border-radius: 4px;
-    color: var(--text-color-contrast);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+        height: 100%;
+        border: 1px solid var(--primary-text-color);
+        border-radius: 4px;
+        /* fill: var(--accent-color); */
+        display: flex;
+         color: var(--primary-text-color); 
+            justify-content: center;
+            align-items: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-list__icon {fill: currentColor;}
 
-.client-list__icon {fill: currentColor;}
-.client-list__size:hover, .client-list__size:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+
+        .client-list__size:hover,
+        .client-list__size:focus{
+            
+        fill: var(--accent-color);
+                
+                
+
+
+
+
+        }
+
+        /* .icon{
+            fill: currentColor;
+            
+        } */
+
+               
+
+ .client-list__size:focus .client-list__icon, 
+ .client-list__size:hover .client-list__icon {
+
+
+border-color: var(--accent-color);
+    }
+    
+
+
+/* 
+.contact-list__link {
+
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
+
+
+
+
+
+
+.contact-list__link:hover,
+.contact-list__link:focus {
+    color: var(--accent-color);
+
+}
+
+
+
+
+
+
+
+.contact-list__link:focus .contact-list__icon,
+.contact-list__link:hover .contact-list__icon {
+    fill: currentColor;
+
+
+} */
+
+
+
+
+
+
+ /* .contact-list__link:hover,
+ .contact-list__link:focus {
+     color: var(--accent-color);
+     text-align: left;
+     fill: var(--accent-color);
+ }
+
+
+
+
+
+
+
+ .contact-list__link:focus .contact-list__icon,
+ .contact-list__link:hover .contact-list__icon {
+     fill: var(--accent-color);
+     text-align: left;
+
+
+ } */
 
 
 
@@ -1154,7 +1241,7 @@ border-radius: 4px;
 }
 
 
-/*=========================================GALLERY===============================================*/
+
 
 
 
