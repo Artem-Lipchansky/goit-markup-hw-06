@@ -867,18 +867,19 @@ color: var(--title-text-color);
         border: 1px solid var(--primary-text-color);
         border-radius: 4px;
         /* fill: var(--accent-color); */
+        
         display: flex;
          color: var(--primary-text-color); 
             justify-content: center;
             align-items: center;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
         .client-list__size:hover,
         .client-list__size:focus{
             
-        fill: var(--accent-color);
+        border-color: var(--accent-color);
                 
                 
 
@@ -887,20 +888,20 @@ color: var(--title-text-color);
 
         }
 
-        /* .icon{
-            fill: currentColor;
-            
-        } */
-
+       
                
 
  .client-list__size:focus .client-list__icon, 
  .client-list__size:hover .client-list__icon {
 
 
-border-color: var(--accent-color);
+fill:  currentColor;
     }
     
+ /* .icon{
+            fill: currentColor;
+            
+        } */
 
 
 /* 
