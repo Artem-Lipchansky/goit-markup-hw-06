@@ -109,12 +109,14 @@ body {
 
  .logo {
      display: flex;
-     font-family: 'Raleway';
+     font-family: 'Raleway', sans-serif;
      font-weight: 700;
-     font-size: 26px;
-     line-height: 1.19;
+     font-size: 18px;
+     line-height: 1.17;
      letter-spacing: 0.03em;
-     color: var(--accent-color);
+        text-transform: uppercase;
+     color: #4d5ae5;
+
 
 
 
@@ -128,7 +130,7 @@ body {
 
      line-height: 1.19;
      letter-spacing: 0.03em;
-     color: var(--title-text-color);
+    color: #2e2f42;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
@@ -470,7 +472,7 @@ display: block;
                 margin-right: auto;
                 max-width: 1600px;
                 height: 600px;
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people-office-1.jpg);
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
                 background-color: var(--secondary-bg-color);
             
     } 
@@ -489,17 +491,21 @@ display: block;
 font-weight: 700;
 font-family: 'Roboto', sans-serif;
 font-size: 56px;
-line-height: 1.36;
-margin-bottom: 30px;
-max-width: 696px;
+font-style: normal;
+line-height: 1.07;
+
+max-width: 496px;
 text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-margin-left: auto;
-margin-right: auto;
-        display: flex;
+letter-spacing: 0.02em;
+
+margin: 0 auto;
+    margin-bottom: 48px;
+        
 
 color: #FFFFFF;
+
+/* text-transform: uppercase; 
+display: flex;*/
 
     }
 
