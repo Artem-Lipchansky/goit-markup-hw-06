@@ -694,50 +694,13 @@ color: #434455;
     height: 70px;
 }
 
-/*=========================================SECTION========================================================*/
-
-/* .section-list{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    position: relative;
-
-} */
-
-.works-examples {
-   
-    display: flex;
-    line-height: 0;
-    gap:30px
-
-}
-
-
-
-
-
-.section-works {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-
-.section-works__title {
-    margin-bottom: 50px;
-    color: var(--title-text-color);
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
 
 
 
 /*=============================================TEAM=========================================================*/
 
 .cards-section {
-    background-color: var(--background-color);
+    background-color: #F4F4FD;
     padding-top: 94px;
     padding-bottom: 94px;
 }
