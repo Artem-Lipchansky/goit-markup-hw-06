@@ -963,8 +963,7 @@ fill:  currentColor;
 .footer {
     background-color: #2E2F42;
     
-    padding-top: 62px;
-    padding-bottom:  61px;
+    padding: 100px 0;
 }
 
 .footer .container {
