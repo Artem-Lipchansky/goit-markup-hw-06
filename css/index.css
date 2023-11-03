@@ -975,33 +975,39 @@ fill:  currentColor;
 
 
 .footer__logo {
-    
-    font-family: 'Raleway';
+    margin-bottom: 16px; 
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 18px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--accent-color); 
-    margin-bottom: 20px;  
+    text-transform: uppercase;
+    color: #4d5ae5;
+     
      
     
     
 }
 
 .footer__logo--accent{
-font-weight: 700;
-font-size: 42;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: var(--primary-bg-color);
+
+color: #f4f4fd;
 
 }
 
-.footer__logo--accent:hover,
-.footer__logo--accent:focus{
-color: var(--accent-color);
 
+.footer__about{
+    max-width: 264px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #f4f4fd;
 }
+
+
 
 
 
@@ -1055,9 +1061,19 @@ color: var(--accent-color);
     color: rgb(255, 255, 255);
 }
 
+
+
+/* -------------------------------------------------------------HOVER----------------------------------------------------------- */
+
 .footer-address__item:hover, 
 .footer-address__item:focus {
     color: var(--accent-color);
+}
+
+.footer__logo--accent:hover,
+.footer__logo--accent:focus {
+    color: var(--accent-color);
+
 }
 
 
