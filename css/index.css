@@ -34,8 +34,8 @@
 
 body {
         font-family: 'Roboto', 'Montserrat', 'Nunito', sans-serif;
-        background-color: var(--primary-bg-color); 
-        color: var(--primary-text-color);
+        background-color: #ffffff; 
+        color: #434455;
         font-size: 14px;
     }
    
@@ -703,8 +703,7 @@ color: #434455;
 
 .cards-section {
     background-color: #F4F4FD;
-    padding-top: 94px;
-    padding-bottom: 94px;
+        padding: 120px 0;
 }
 .cards-section__title {
     margin-bottom: 50px;
@@ -717,46 +716,44 @@ color: #212121;
 }
 .social-list {
     display: flex;
-    gap: 10px;
+    gap: 24px;
     justify-content: center;
 }
 
 .team-list{
     display: flex;
     
-    gap: 30px;
+    gap: 24px;
 }
 .team-list__item {
-    max-width: 270px;
+        max-width: calc((100% - 48px) / 3);
+    border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-     0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
 }
 .team-list__name {
+        color: #2E2F42;
     font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-margin-top: 10px;
-margin-bottom: 10px;
+font-size: 20px;
+line-height: 1.2;
+
+margin-bottom: 8px;
 
 text-align: center;
-letter-spacing: 0.03em;
+letter-spacing: 0.02em;
 
 color: #212121;
 }
 .team-list__position {
-    font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-margin-bottom: 16px;
+    
+margin-bottom: 8px;
 
 
 text-align: center;
 letter-spacing: 0.03em;
 
-color: #757575;
+
 }
 /* .team__social {
     display: flex;
@@ -779,7 +776,7 @@ color: #757575;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--primary-bg-color);
+    background-color: #4D5AE5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -787,7 +784,7 @@ color: #757575;
 }
 
 .social-list__icon{
-    fill: #AFB1B8;
+    fill: #EEEEEE;
 }
 
 .social-list__link:hover,
@@ -797,7 +794,7 @@ color: #757575;
 
 .social-list__link:hover .social-list__icon,
 .social-list__link:focus .social-list__icon{
-    fill: var(--primary-bg-color);
+    fill: #EEEEEE;
 }
 
 
