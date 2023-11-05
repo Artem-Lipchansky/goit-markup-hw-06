@@ -384,7 +384,7 @@ display: block;
 
 
 
-.footer-form__button {
+.footer-subscribe__button {
     
             /* align-self: flex-end;
                 gap: 10px;
@@ -415,7 +415,7 @@ display: block;
             
             
             
-    .form__button{
+    .modal__button{
 
             display: block;
                 min-width: 169px;
@@ -429,15 +429,15 @@ display: block;
 
 
 
-.form__button:hover,
-.form__button:focus {
+.modal__button:hover,
+.modal__button:focus {
     background-color: #404bbf;;
     color: var(--primary-bg-color);
 
 }
         
-    .footer-form__button:hover,
-    .footer-form__button:focus
+    .footer-subscribe__button:hover,
+    .footer-subscribe__button:focus
     {
      background-color: #404bbf;;
      color: var(--primary-bg-color);               
@@ -1129,7 +1129,7 @@ color: var(--accent-color);
 
 
 
-.footer-form__title{    
+.footer-subscribe__title{    
         display: block;
             margin-bottom: 16px;
             font-weight: 500;
@@ -1181,7 +1181,7 @@ color: var(--accent-color);
 /*============================================FORM-SUBSCRIP================================================*/
 
 
-.form-subscrip{
+.footer-subscribe{
 
         display: flex;
         gap: 24px;
@@ -1189,15 +1189,15 @@ color: var(--accent-color);
     
 }
 
-.footer-form{
+/* .footer-wrapper{
     
             display: flex;
             gap: 12px;
             margin-left: auto;
         
-}
+} */
 
-.footer-form__input{
+.footer-subscribe__input{
     width:264px;
     height: 40px;
     /* margin-right: 12px; */
@@ -1215,7 +1215,7 @@ border-radius: 4px;
 
 }
 
-.footer-form__icon{
+.footer-subscribe__icon{
     fill: var(--primary-bg-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1232,13 +1232,13 @@ border-radius: 4px;
 
 
 
-/* .footer-form__input:hover, */ .footer-form__input:focus {
+/* .footer-form__input:hover, */ .footer-subscribe__input:focus {
     border-radius: 4px;
         border: 1px solid var(--WHITE, #FFF);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.footer-form__input::placeholder {
+.footer-subscribe__input::placeholder {
     font-family: Roboto;
     font-weight: 400;
     font-size: 12px;
@@ -1290,7 +1290,7 @@ border-radius: 4px;
 
 
 
-.form{
+.modal-send{
     font-weight: 400;
     font-size: 12px;
     line-height: 1.166;
@@ -1313,7 +1313,7 @@ border-radius: 4px;
 
 
 
-.form__wrap{
+.modal-send__wrap{
     position: relative;
    display: block;
     margin-top: 4px;
@@ -1321,7 +1321,7 @@ border-radius: 4px;
 
 }
 
-.form__label {
+.modal-send__label {
   font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
@@ -1412,7 +1412,7 @@ letter-spacing: 0.04em;
  
 
 
-  .form__input{
+  .modal-send__field{
     width: 100%;
     height: 40px;
     padding-left: 38px;
@@ -1426,10 +1426,10 @@ letter-spacing: 0.04em;
 }
 
 
- .form__input:focus, .form__textarea:focus {border-color: #404bbf;;}
+ .modal-send__field:focus, .modal-send__textarea:focus {border-color: #404bbf;;}
 
 
- .form__input:focus + .form__icon 
+ .modal-send__field:focus + .modal-send__icon
   {fill: #404bbf;}
 
 
@@ -1449,7 +1449,7 @@ letter-spacing: 0.04em;
 
 
 
-  .form__textarea{
+  .modal-send__textarea{
     width: 100%;
     height: 120px;
     font-size: 12px;
@@ -1477,7 +1477,7 @@ letter-spacing: 0.04em;
 }
 
 
-.form__icon{
+.modal-send__icon{
     position: absolute;
     top: 50%;
     left: 16px;
