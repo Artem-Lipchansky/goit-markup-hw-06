@@ -119,9 +119,9 @@ width: 100%;
         width: 768px;
     }
 
-        @media screen and (min-width: 768px) {
+        /* @media screen and (min-width: 768px) {
            
-}
+} */
 
 }
 
@@ -144,15 +144,19 @@ width: 100%;
     .container {
         width: 1158px;
     }
+
+         .team-list {
+             gap: 20px;
+             /* Приклад, що ви можете змінити */
+             /* Додаткові стилі для .team-list на великих екранах */
+         }
+
+                 .team-list-item {
+                     width: calc((100% - 72px) / 4);
+                 }
 }
 
-@media screen and (min-width: 1158px) {
-    .team-list {
-        gap: 20px;
-        /* Приклад, що ви можете змінити */
-        /* Додаткові стилі для .team-list на великих екранах */
-    }
-}
+
 
 
 
@@ -785,13 +789,13 @@ color: #212121;
         align-items: center;
 }
 
-.team-list{
+/* .team-list{
         display: flex;
             gap: 72px;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-}
+} */
 .team-list__item {
         /* max-width: calc((100% - 48px) / 3); */
         /* width: 100%; */
