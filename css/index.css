@@ -103,21 +103,54 @@ width: 100%;
 
 
 
-@media screen and (min-width: 480px) {
+
+
+
+/* @media screen and (min-width: 320px) {
     .container {
-        width: 480px;
-    }
-}
+        width: 320px;
+    } */
+
+        
+
 
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
+
+        @media screen and (min-width: 768px) {
+           
 }
 
+}
+
+
+.team-list {
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+                        
+                        
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list {
+        gap: 20px;
+        /* Приклад, що ви можете змінити */
+        /* Додаткові стилі для .team-list на великих екранах */
     }
 }
 
