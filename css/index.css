@@ -1824,28 +1824,38 @@ fill:  var(--accent-color);
 
 /* ___________________________________________________________DESKTOP-TEAM____________________________________________________________*/
 
-
-
-@media screen and (min-width: 320px) {
 .gallery {
-        /* display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     gap: 24px; */
 
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        row-gap: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 48px;
 
 
 
-    }
+}
+
+.client-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media screen and (min-width: 320px) {
+
 }
 
 
 @media screen and (min-width: 768px) {
+
+    .client-section {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
 .gallery {
         flex-direction: row;
         column-gap: 24px;
@@ -1855,6 +1865,8 @@ fill:  var(--accent-color);
     width: calc((100% - 30px) / 2);
 
 }
+
+
         
 }
 
@@ -1863,6 +1875,12 @@ fill:  var(--accent-color);
 
 
 @media screen and (min-width: 1158px) {
+
+.client-section {
+            padding-top: 120px;
+                padding-bottom: 120px;
+    }
+
 .gallery {
     column-gap: 24px;
 }
@@ -1889,6 +1907,7 @@ background-color: var(--accent-color);
 
 
 /* ============================================GALLERY================================================ */
+
 
 
 
