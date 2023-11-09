@@ -77,84 +77,157 @@ body {
        
 
 
-        width: 100%;
+        
       }
 
 
-      
+      /*===================================MOB-MENU===========================  */
 
+   /* @media screen and (max-width: 767px) {
+    BURGER MENU *
 
+    .burger-overlay {
+        position: fixed;
+        background-color: #ffffff;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .burger-overlay.is-open {
+        transform: translateX(0);
+    }
+
+    .burger-modal-window {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 72px 16px 40px 16px;
+        width: 320px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .burger-menu-btn {
+        background-color: var(--WHITE, #FFF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger-close-btn {
+        background-color: #ffffff;
+    }
+
+    .burger-navigation-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .burger-navigation-item {
+        color: var(--NAVY-BLUE, #2E2F42);
+
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+
+    .burger-contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+    }
+
+    .burger-contacts-item {
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .burger-social-list {
+        display: flex;
+
+        gap: 40px;
+        max-width: 280px;
+    }
+
+    .burger-contacts-item:hover {
+        color: var(--IRIS, #4D5AE5);
+    }
+
+    .burger-navigation-item:hover {
+        color: var(--OCEAN, #404BBF);
+    }
+}
       
 /*==========================================HEADER=================================================*/
 
-.container{
-    /* max-width: 1158px; */
-
-width: 100%;
-        padding: 0 15px;
-        margin: 0 auto;
-
-
-
-        
+.container {
     
-    
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+   
 }
 
 
-
-
-
-
-/* @media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
     .container {
-        width: 320px;
-    } */
-
+        width: 480px;
+      
         
+    }
+}
 
 
 @media screen and (min-width: 768px) {
     .container {
+        
         width: 768px;
+       
+          
     }
-
-        /* @media screen and (min-width: 768px) {
-           
-} */
-
-}
-
-
-.team-list {
-    display: flex;
-    gap: 72px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 
 
 
-
-                        
-                        
+    
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+       
+          
     }
-
-         .team-list {
-             gap: 20px;
-             /* Приклад, що ви можете змінити */
-             /* Додаткові стилі для .team-list на великих екранах */
-         }
-
-                 .team-list-item {
-                     width: calc((100% - 72px) / 4);
-                 }
 }
+
+
+
+
+
+
+
+
+
+
+                        
+                        
+
+
+
+         
+
 
 
 
@@ -766,12 +839,32 @@ color: #434455;
 
 
 
+
+
+
+
 /*=============================================TEAM=========================================================*/
 
 .cards-section {
     background-color: #F4F4FD;
-        padding: 120px 0;
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+        
 }
+
+.team-list {
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
 .cards-section__title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -782,23 +875,28 @@ color: #434455;
 color: #212121;
 }
 .social-list {
-    display: flex;
-        
-        gap: 24px;
-        justify-content: center;
-        align-items: center;
-}
-
-/* .team-list{
         display: flex;
-            gap: 72px;
+            flex-direction: row;
+            gap: 24px;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-} */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .team-list__item {
         /* max-width: calc((100% - 48px) / 3); */
-        /* width: 100%; */
+        
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -827,25 +925,18 @@ letter-spacing: 0.03em;
 
 
 }
-/* .team__social {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-   
-   
-} */
+
 
 .team-list__container{
-    /* padding: 20px 30px; */
         padding: 32px 0;
             text-align: center;
             background-color: #ffffff;
     
 }
-.team__item{
+/* .team__item{
     width: calc((100% - 60px) / 3);
     background-color: var(--primary-bg-color);
-    border: 1px solid #EEEEEE;}
+    border: 1px solid #EEEEEE;} */
 
     .social-list__link{
     width: 44px;
@@ -857,6 +948,64 @@ letter-spacing: 0.03em;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ___________________________________________________________MOB-TEAM_____________________________________________________________ */
+
+
+/* ___________________________________________________________TABLET-TEAM____________________________________________________________*/
+
+@media screen and (min-width: 768px) {
+    .cards-section {
+        background-color: #F4F4FD;
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+
+    }
+
+
+
+    ul,
+    ol {
+        flex-direction: row;
+    }
+
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 64px;
+        max-width: 1157px;
+    }
+}
+
+/* ___________________________________________________________DESKTOP-TEAM____________________________________________________________*/
+
+@media screen and (min-width: 1158px) {
+    .cards-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+
+    .team-list__item {
+        width: calc((100% - 72px)/4);
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 64px;
+        max-width: 1157px;
+    }
+
+}
+
+/* -----------------------------------------------------------SOCIAL-HOVER--------------------------------------------------------- */
 
 
 .social-list__item{
@@ -1666,7 +1815,45 @@ fill:  var(--accent-color);
             color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- 
+
+
+/* ___________________________________________________________MOB-TEAM_____________________________________________________________ */
+
+
+/* ___________________________________________________________TABLET-TEAM____________________________________________________________*/
+
+/* ___________________________________________________________DESKTOP-TEAM____________________________________________________________*/
+
+
+@media screen and (min-width: 768px) {
+.gallery {
+        flex-direction: row;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+.gallery__item {
+    width: calc((100% - 60px) / 2);
+
+}
+        
+}
+
+
+
+
+
+@media screen and (min-width: 1158px) {
+.gallery {
+    column-gap: 24px;
+}
+  .gallery__item {  width: calc((100% - 60px) / 3);
+
+}
+
+}
+
+
+ /* ----------------------------------------PORTFOLIO-HOVER----------------------------------------------------- */
 
  .portfolio-button-list  .portfolio-button-list__button:hover,.portfolio-button-list__button:focus{
     box-shadow: 14px 13px 24px -8px rgba(0, 0, 0, 0.59);
@@ -1711,8 +1898,8 @@ background-color: var(--accent-color);
 }
 
 .gallery__item {
-    width: calc((100% - 60px) / 3);
-    /* background-color: var(--primary-text-color);
+   /* width: calc((100% - 60px) / 3);
+     background-color: var(--primary-text-color);
     border: 1px solid #EEEEEE; */
     cursor: pointer;
 
