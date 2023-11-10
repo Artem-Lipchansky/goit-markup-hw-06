@@ -27,18 +27,27 @@
     }
 
     ul,ol{
-        margin:0;
-        padding-left: 0;
-    }
+        /* margin:0;
+        padding-left: 0; */
 
+        
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+            
+    }
 
 body {
-        font-family: 'Roboto', 'Montserrat', 'Nunito', sans-serif;
-        background-color: #ffffff; 
-        color: #434455;
-        font-size: 16px;
-        font-weight: 400;
-    }
+    font-family: Roboto, sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+        /* 'Montserrat', 
+        'Nunito',*/
    
 
 
@@ -686,13 +695,48 @@ display: flex;*/
 
 /*===========================================FEATURES=======================================================*/
 
-.features-list{
+
+
+
+
+
+ .feature-list__text--third {
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+ }
+
+ .feature-list__text {
+
+        color: var(--SLATE, #434455);
+        font-weight: 500;
+    
+} 
+
+
+
+.features-list {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* .features-list{
     
 
     display: flex;
         gap: 72px;
         align-items: flex-start;
     
+} */
+
+.feature-list__item {
+    max-width: 288px;
 }
 
 
@@ -779,6 +823,15 @@ display: flex;*/
         
     }
 
+        /* .feature-list__text--third{
+color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+        } */
+
 
 
 
@@ -795,31 +848,27 @@ color: #434455;
 }
 
 
-.feature-list__text {
+/* .feature-list__text {
         font-weight: 500;
             line-height: 1.2;
             font-size: 20px;
-}
+            color: #434455;
+} */
 
- .feature-list__text--third {
-     line-height: 1.5;
-     letter-spacing: 0.02em;
- }
+
 
 
  .feature-list__title {
      margin-bottom: 8px;
  }
 
+ 
 
 
 
 
-.feature-list__item{
-    
-        width: calc((100% - 90px)/4);
-        
-}
+
+
 
 
 /* .feature-list__item:nth-child(-n+3) {
@@ -897,7 +946,14 @@ color: #434455;
        line-height: 1.2;
        font-size: 20px;
    }
+
+   .feature-list__text {
+
+       font-weight: 400;
+   }
 }
+
+
 
 
 
