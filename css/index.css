@@ -36,7 +36,8 @@ body {
         font-family: 'Roboto', 'Montserrat', 'Nunito', sans-serif;
         background-color: #ffffff; 
         color: #434455;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 400;
     }
    
 
@@ -80,6 +81,7 @@ body {
         
       }
 
+     
 
       /*===================================MOB-MENU===========================  */
 
@@ -801,9 +803,20 @@ color: #434455;
 
 
 .feature-list__text {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+        font-weight: 500;
+            line-height: 1.2;
+            font-size: 20px;
 }
+
+ .feature-list__text--third {
+     line-height: 1.5;
+     letter-spacing: 0.02em;
+ }
+
+
+ .feature-list__title--second {
+     text-align: start;
+ }
 
 
 
@@ -843,6 +856,10 @@ color: #434455;
        width: calc((100% - 24px) / 2);
             max-width: 356px;
    }
+
+ .feature-list__title--second {
+            text-align: start;
+        }
 } 
 
 
@@ -867,14 +884,7 @@ color: #434455;
 
 
    .features-list__container {
-       /* display: flex;
-    width: 270px;
-    height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center; */
-
+       
        margin-bottom: 30px;
        height: 120px;
        background-color: #f4f4fd;
@@ -887,6 +897,12 @@ color: #434455;
        align-items: center;
 
        border-radius: 4px;
+   }
+
+   .feature-list__title {
+       font-weight: 500;
+       line-height: 1.2;
+       font-size: 20px;
    }
 }
 
