@@ -725,16 +725,6 @@ display: flex;*/
 
 
 
-
-/* .features-list{
-    
-
-    display: flex;
-        gap: 72px;
-        align-items: flex-start;
-    
-} */
-
 .feature-list__item {
     max-width: 288px;
 }
@@ -742,28 +732,6 @@ display: flex;*/
 
 
 
-/* .works-examples__item{
-    position: relative;
-        width: calc((100% - 60px)/3);
-    
-}
-
-
-
-
-.works-examples__text {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    padding: 27px 0;
-    text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1428571429;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: rgba(47, 48, 58, .8);
-} */
 
 /* .features-list*/ .menu__item{ 
     margin-right: 30px;
@@ -809,7 +777,6 @@ display: flex;*/
 
 
 
-
 .feature-list__title--second {
     
             color: #2E2F42;
@@ -823,16 +790,7 @@ display: flex;*/
         
     }
 
-        /* .feature-list__text--third{
-color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-        } */
-
-
+      
 
 
 .feature-list__text {
@@ -848,14 +806,6 @@ color: #434455;
 }
 
 
-/* .feature-list__text {
-        font-weight: 500;
-            line-height: 1.2;
-            font-size: 20px;
-            color: #434455;
-} */
-
-
 
 
  .feature-list__title {
@@ -865,15 +815,6 @@ color: #434455;
  
 
 
-
-
-
-
-
-
-/* .feature-list__item:nth-child(-n+3) {
-    margin-right: 30px;
-} */
 
 .feature-list__icon {
     width: 70px;
@@ -1157,6 +1098,8 @@ letter-spacing: 0.03em;
 
 .client-section{
     padding: 120px 0;
+
+    
 }
 
 
@@ -2178,7 +2121,60 @@ fill:  var(--accent-color);
 
 
 
+/* .feature-list__text {
+        font-weight: 500;
+            line-height: 1.2;
+            font-size: 20px;
+            color: #434455;
+} */
 
+/* .feature-list__text--third{
+color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+        } */
+
+
+
+/* .works-examples__item{
+            position: relative;
+                width: calc((100% - 60px)/3);
+            
+        }
+        
+        
+        
+        
+        .works-examples__text {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            padding: 27px 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1428571429;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: rgba(47, 48, 58, .8);
+        } */
+
+/* .features-list{
+            
+        
+            display: flex;
+                gap: 72px;
+                align-items: flex-start;
+            
+        } */
+
+
+/* .feature-list__item:nth-child(-n+3) {
+            margin-right: 30px;
+        } */
 
 
 
