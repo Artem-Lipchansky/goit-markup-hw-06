@@ -681,10 +681,15 @@ display: flex;*/
 /*===========================================FEATURES=======================================================*/
 
 .features-list{
+    
+
     display: flex;
-    gap:30px
+        gap: 72px;
+        align-items: flex-start;
     
 }
+
+
 
 
 .works-examples__item{
@@ -726,7 +731,8 @@ display: flex;*/
 
 .features {
 
-    padding: 120px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
     
 }
 
@@ -838,8 +844,44 @@ color: #434455;
 
 
 
+/* _____________________________________________FEATURES-TABLET__________________________________________________ */
+
+        @media screen and (min-width: 768px){ 
+            .features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    row-gap: 72px;
+        }
+
+   .feature-list__item {
+       width: calc((100% - 24px) / 2);
+            max-width: 356px;
+   }
+} 
 
 
+/* _____________________________________________FEATURES-DESKTOP__________________________________________________ */
+
+      @media screen and (min-width: 1158px){ 
+            .features {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+           .features-list{
+                 display: flex;
+                 gap: 24px;
+                 align-items: flex-start;
+                }
+
+ 
+   .feature-list__item{
+       width: calc((100% - 72px) / 4);
+    
+   }
+}
 
 
 
