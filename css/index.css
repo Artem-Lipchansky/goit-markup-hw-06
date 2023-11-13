@@ -108,6 +108,13 @@ a {
     .burger-close-btn {
             background-color: #ffffff;
         }
+
+         .burger-menu-btn {
+        background-color: var(--WHITE, #FFF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     }
 
    /* .burger-overlay {
@@ -421,17 +428,10 @@ display: block;
 
 
 
-   .menu-open-btn{
-        background-color: var(--WHITE, #FFF);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  
 
 
-        .burger-close-btn {
-            background-color: #ffffff;
-        }
+       
 }
 
 /* __________________________________________TABLET-HEADER_________________________________________ */
@@ -479,7 +479,7 @@ display: block;
       gap: 12px;
   }
 
-  .menu-open-btn {
+  .burger-menu-btn {
       display: none;
   }
 
