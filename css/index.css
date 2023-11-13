@@ -49,7 +49,15 @@ body {
         /* 'Montserrat', 
         'Nunito',*/
    
-
+button,
+a {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
 
 
 
@@ -227,14 +235,16 @@ body {
     display: flex;
         align-items: center;
 } */
-
+.contacts-list {
+    flex-direction: row;
+    gap: 40px;
+}
  
  .header {
 
-        border-bottom: 1px solid #e7e9fc;
-        background: #fff;
-
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        
+        border-bottom: 1px solid #E7E9FC;
+            min-width: 320px;
  }
 
 
@@ -342,13 +352,13 @@ display: block;
 
 
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
     .container {
-        width: 480px;
+        width: auto;
 
 
     }
-}
+} */
 
 
 @media screen and (min-width: 768px) {
@@ -405,6 +415,15 @@ display: block;
                  .contact-list {
                      display: none;
                  }
+
+
+
+   .menu-open-btn{
+        background-color: var(--WHITE, #FFF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* __________________________________________TABLET-HEADER_________________________________________ */
@@ -438,6 +457,35 @@ display: block;
       gap: 50px;
 
   }
+
+  /* .arrows-menu-btn {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+  } */
+
+  
+
+  .contact-list__list {
+      flex-direction: column;
+      gap: 12px;
+  }
+
+  .menu-open-btn {
+      display: none;
+  }
+
+   .contact-list__link {
+
+       padding: 6px 0;
+       font-size: 12px;
+       line-height: 1.17;
+       letter-spacing: 0.04em;
+       transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+   }
+
+  
 }
 
 
@@ -472,6 +520,23 @@ display: block;
       gap: 50px;
 
   }
+
+
+  .contact-list__list {
+      flex-direction: row;
+      gap: 40px;
+  }
+
+ 
+.contact-list__link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+  
+   
 }
 
 
@@ -532,12 +597,7 @@ display: block;
 
     
     
-        .contact-list__list{
-        display: flex;
-   
-     gap: 40px;
-
-        }
+    
 
         
     
@@ -545,7 +605,7 @@ display: block;
     
     
       
-        
+/*         
          .contact-list__link {
         
         align-items: center;
@@ -557,7 +617,7 @@ display: block;
         letter-spacing: 0.02em;
             color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        } */
        
 
 /* -----------------------------------------------------HOVER--------------------------------------------------- */
@@ -1237,8 +1297,7 @@ fill:  currentColor;
 
 .contact-list__link:hover,
 .contact-list__link:focus {
-    color: var(--accent-color);
-
+    color: #404bbf
 }
 
 
