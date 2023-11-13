@@ -102,10 +102,15 @@ a {
 
       /*===================================MOB-MENU===========================  */
 
-   /* @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     BURGER MENU *
 
-    .burger-overlay {
+    .burger-close-btn {
+            background-color: #ffffff;
+        }
+    }
+
+   /* .burger-overlay {
         position: fixed;
         background-color: #ffffff;
         height: 100%;
@@ -140,9 +145,7 @@ a {
         justify-content: center;
     }
 
-    .burger-close-btn {
-        background-color: #ffffff;
-    }
+    
 
     .burger-navigation-list {
         display: flex;
