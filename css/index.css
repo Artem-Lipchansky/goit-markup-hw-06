@@ -103,7 +103,7 @@ a {
       /*===================================MOB-MENU===========================  */
 
     @media screen and (max-width: 767px) {
-    BURGER MENU *
+   
 
     .burger-close-btn {
             background-color: #ffffff;
@@ -117,7 +117,7 @@ a {
     }
     }
 
-   /* .burger-overlay {
+    .burger-overlay {
         position: fixed;
         background-color: #ffffff;
         height: 100%;
@@ -198,7 +198,7 @@ a {
     .burger-navigation-item:hover {
         color: var(--OCEAN, #404BBF);
     }
-}
+
       
 /*==========================================CONTAINER=================================================*/
 
