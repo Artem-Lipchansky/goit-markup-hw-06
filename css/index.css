@@ -424,6 +424,11 @@ display: block;
         align-items: center;
         justify-content: center;
     }
+
+
+        .burger-close-btn {
+            background-color: #ffffff;
+        }
 }
 
 /* __________________________________________TABLET-HEADER_________________________________________ */
