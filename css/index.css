@@ -2412,6 +2412,13 @@ fill:  var(--accent-color);
      }
 
 
+
+          .footer__content {
+              margin-bottom: 0;
+              margin-right: 120px;
+          }
+
+
 }
 
 
