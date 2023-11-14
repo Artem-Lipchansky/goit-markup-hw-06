@@ -177,6 +177,16 @@ a {
 
 }
 
+.footer__about {
+    max-width: 264px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #f4f4fd;
+}
+
 
 
 
@@ -246,24 +256,15 @@ a {
 
 
 
-.footer__about {
-    max-width: 264px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #f4f4fd;
-}
 
-
+/* 
 .footer-social__container {
 
 
 
     margin-left: 120px;
 
-}
+} */
 
 
 
@@ -365,6 +366,14 @@ a {
 
     color: #fff;
 }
+
+
+   .footer-social__container {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
 
 
       /*===================================MOB-MENU===========================  */
@@ -2407,7 +2416,15 @@ fill:  var(--accent-color);
                     margin-right: 24px;
                     margin-bottom: 72px;
                 }
-             
+
+
+
+            .footer-social__container {
+              align-items: flex-start;
+          }
+
+
+              
  
 }
 
@@ -2461,6 +2478,11 @@ fill:  var(--accent-color);
         margin-right: 120px;
     }
 
+
+
+.footer-social__container {
+    margin-right: 80px;
+}
 
 }
 
