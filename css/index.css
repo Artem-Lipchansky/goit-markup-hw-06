@@ -98,11 +98,46 @@ a {
         
       }
 
+      .container {
+    
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+   
+}
+
           .is-open {
               opacity: 1;
               visibility: visible;
               pointer-events: auto;
           }
+
+
+
+
+
+
+
+
+
+
+    .footer__container{
+        
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 72px;
+            
+    } 
+    
+    
+
+
+
+
+
+    /* _______________________________________________________________________________________________- */
 
                         .burger-close-btn {
                             background-color: var(--WHITE, #FFF);
@@ -157,10 +192,7 @@ a {
     padding: 96px 0;
 }
 
-.footer .container {
-    display: flex;
-    align-items: baseline;
-}
+
 
 
 
@@ -444,13 +476,7 @@ a {
       
 /*==========================================CONTAINER=================================================*/
 
-.container {
-    
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-   
-}
+
 
 .features-list__container{
     display: none;
@@ -613,42 +639,12 @@ display: block;
 } */
 
 
-@media screen and (min-width: 768px) {
-    .container {
-
-        width: 768px;
-
-
-    }
-
-         ul,
-         ol {
-             flex-direction: row;
-         }
-
-                 .burger-overlay,
-                 .burger-menu-btn {
-                     display: none;
-                 }
-}
 
 
 
 
 
-@media screen and (min-width: 1158px) {
-    .container {
-        width: 1158px;
-        padding: 0 15px;
 
-
-    }
-
-     ul,
-    ol {
-        flex-direction: row;
-    }
-}
 
 
 
@@ -2335,15 +2331,93 @@ fill:  var(--accent-color);
 /* ============================================GALLERY================================================ */
 
 
-        @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+@media screen and (min-width: 768px) {
+    .container {
+
+        width: 768px;
+
+
+    }
+
+    ul,
+    ol {
+        flex-direction: row;
+    }
+
+    .burger-overlay,
+    .burger-menu-btn {
+        display: none;
+    }
+
+    .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: inherit;
+    gap: 0;
+    padding: 0 108px;
+}
+
+
+        @media screen and (min-width: 768px) and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx),
         screen and (min-device-pixel-ratio: 2) {
             .hero {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                         rgba(46, 47, 66, 0.70)),
-                    url('../images/desktop/people-office-desktop@2x.jpg');
+                    url('../images/tablet/people-office-tablet@2x.jpg');
             }
         }
+    
+ 
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        padding: 0 15px;
+
+
+    }
+
+    ul,
+    ol {
+        flex-direction: row;
+    }
+
+
+  @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx),
+          screen and (min-device-pixel-ratio: 2) {
+              .hero {
+                  background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                          rgba(46, 47, 66, 0.70)),
+                      url('../images/desktop/people-office-desktop@2x.jpg');
+              }
+
+            }
+
+
+
+.footer__container {
+                  justify-content: center;
+                  padding: 0;
+     }
+
+
+}
+
+
+    
+
+     
 
 
 
