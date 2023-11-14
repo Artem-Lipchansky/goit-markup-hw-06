@@ -154,7 +154,7 @@ a {
 .footer {
     background-color: #2E2F42;
 
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .footer .container {
@@ -2335,7 +2335,15 @@ fill:  var(--accent-color);
 /* ============================================GALLERY================================================ */
 
 
-
+        @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx),
+        screen and (min-device-pixel-ratio: 2) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+                        rgba(46, 47, 66, 0.70)),
+                    url('../images/desktop/people-office-desktop@2x.jpg');
+            }
+        }
 
 
 
