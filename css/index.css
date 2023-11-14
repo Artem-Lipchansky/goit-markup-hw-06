@@ -98,6 +98,21 @@ a {
         
       }
 
+          .is-open {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+          }
+
+
+                  .social-icon-list {
+                      display: flex;
+                      flex-direction: row;
+                      gap: 24px;
+                      justify-content: center;
+                      align-items: center;
+                  }
+
      
 
       /*===================================MOB-MENU===========================  */
@@ -109,7 +124,9 @@ a {
             background-color: #ffffff;
         }
 
-         .burger-menu-btn {
+        
+
+         .burger-close-btn {
         background-color: var(--WHITE, #FFF);
         display: flex;
         align-items: center;
@@ -145,7 +162,7 @@ a {
         margin: 0 auto;
     }
 
-    .burger-menu-btn {
+    .burger-close-btn {
         background-color: var(--WHITE, #FFF);
         display: flex;
         align-items: center;
@@ -184,7 +201,7 @@ a {
         letter-spacing: 0.02em;
     }
 
-    .burger-social-list {
+    .social-list-burger {
         display: flex;
 
         gap: 40px;
@@ -198,6 +215,13 @@ a {
     .burger-navigation-item:hover {
         color: var(--OCEAN, #404BBF);
     }
+
+        /* .social-list-burger {
+            
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 40px;
+        } */
 
       
 /*==========================================CONTAINER=================================================*/
@@ -466,12 +490,7 @@ display: block;
 
   }
 
-  /* .arrows-menu-btn {
-      border: none;
-      background-color: transparent;
-      padding: 0;
-  } */
-
+ 
   
 
   .contact-list__list {
@@ -479,7 +498,7 @@ display: block;
       gap: 12px;
   }
 
-  .burger-menu-btn {
+  .burger-close-btn {
       display: none;
   }
 
