@@ -2146,21 +2146,7 @@ fill:  var(--accent-color);
     padding-bottom: 96px;
 }
 
-.gallery {
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 24px; */
 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 48px;
-
-
-
-}
 
 .portfolio-button-list__button--current {
     color: var(--primary-bg-color);
@@ -2250,12 +2236,6 @@ fill:  var(--accent-color);
 }
 
 
-.gallery .content {
-    padding: 20px 24px;
-    border: 1px solid #eeeeee;
-    border-top: none;
-
-}
 
 
 
@@ -2290,23 +2270,23 @@ fill:  var(--accent-color);
 
 /* ___________________________________________________________TABLET-PORTFOLIO____________________________________________________________*/
 
-@media screen and (min-width: 768px) {
 
-    .client-section {
-        padding-top: 96px;
-        padding-bottom: 96px;
-    }
 
-    .gallery {
-        flex-direction: row;
-        column-gap: 24px;
-        row-gap: 72px;
-    }
 
-    .gallery__item {
-        width: calc((100% - 30px) / 2);
 
-    }
+
+
+.gallery {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 24px; */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 48px;
 
 
 
@@ -2315,21 +2295,12 @@ fill:  var(--accent-color);
 
 
 
-/* ___________________________________________________________DESKTOP-TEAM____________________________________________________________*/
-
-
-
-
-
-@media screen and (min-width: 320px) {
+.gallery .content {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
 
 }
-
-
-
-
-
-
 
 
 
@@ -2372,7 +2343,7 @@ fill:  var(--accent-color);
 }
 
 
-/* ============================================GALLERY================================================ */
+/* ============================================TABLET================================================ */
 
 
 @media screen and (min-width: 768px) {
@@ -2393,18 +2364,6 @@ fill:  var(--accent-color);
         display: none;
     }
 
-    .footer__container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: inherit;
-    gap: 0;
-    padding: 0 108px;
-}
-
-   .footer__logo {
-       margin-right: 120px;
-   }
 
 
         @media screen and (min-width: 768px) and (min-resolution: 192dpi),
@@ -2418,7 +2377,48 @@ fill:  var(--accent-color);
         }
 
 
-                .footer__content{
+  .client-section {
+      padding-top: 96px;
+      padding-bottom: 96px;
+  }
+
+
+
+
+  .gallery {
+      flex-direction: row;
+      column-gap: 24px;
+      row-gap: 72px;
+  }
+
+  .gallery__item {
+      width: calc((100% - 30px) / 2);
+
+  }
+
+
+  /* __________________________________________________FOOTER_________________________________________________ */
+
+
+          .footer__container {
+              flex-direction: row;
+              flex-wrap: wrap;
+              align-items: baseline;
+              justify-content: inherit;
+              gap: 0;
+              padding: 0 108px;
+          }
+    
+          .footer__logo {
+              margin-right: 120px;
+          }
+        
+
+
+   
+
+
+.footer__content{
                     display: inline-block;
                     width: 264px;
                     margin-right: 24px;
@@ -2441,6 +2441,9 @@ fill:  var(--accent-color);
 .footer-subscribe {
     flex-direction: row;
 }
+
+
+
               
  
 }
@@ -2449,7 +2452,7 @@ fill:  var(--accent-color);
 
 
 
-
+          /* ===============================================DESKTOP========================================================== */
 
 
 @media screen and (min-width: 1158px) {
@@ -2465,7 +2468,7 @@ fill:  var(--accent-color);
         flex-direction: row;
     }
 
-        
+  
 
 
   @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
