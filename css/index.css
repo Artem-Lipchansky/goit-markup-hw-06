@@ -1760,11 +1760,14 @@ color: var(--accent-color);
 /*============================================FORM-SUBSCRIP================================================*/
 
 
-.footer-subscribe{
+.footer-subscribe__label{
 
-        display: flex;
-        gap: 24px;
-        justify-content: center;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+        
     
 }
 
