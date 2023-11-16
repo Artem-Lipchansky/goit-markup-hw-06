@@ -17,26 +17,26 @@
 
 
 
-  // Отримуємо всі кнопки для відкриття та закриття
-const openButtons = document.querySelectorAll('[data-modal-open]');
-const closeButtons = document.querySelectorAll('[data-modal-close]');
-const overlay = document.querySelector('.burger-overlay');
+//   // Отримуємо всі кнопки для відкриття та закриття
+// const openButtons = document.querySelectorAll('[data-modal-open]');
+// const closeButtons = document.querySelectorAll('[data-modal-close]');
+// const overlay = document.querySelector('.burger-overlay');
 
-// Функція для відкриття модального вікна
-function openModal() {
-  overlay.classList.add('is-open');
-}
+// // Функція для відкриття модального вікна
+// function openModal() {
+//   overlay.classList.add('is-open');
+// }
 
-// Функція для закриття модального вікна
-function closeModal() {
-  overlay.classList.remove('is-open');
-}
+// // Функція для закриття модального вікна
+// function closeModal() {
+//   overlay.classList.remove('is-open');
+// }
 
-// Додаємо обробники подій для кожної кнопки
-openButtons.forEach(button => {
-  button.addEventListener('click', openModal);
-});
+// // Додаємо обробники подій для кожної кнопки
+// openButtons.forEach(button => {
+//   button.addEventListener('click', openModal);
+// });
 
-closeButtons.forEach(button => {
-  button.addEventListener('click', closeModal);
-});
+// closeButtons.forEach(button => {
+//   button.addEventListener('click', closeModal);
+// });
