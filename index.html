@@ -214,7 +214,14 @@
 
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/img-mark.jpg" width="264" height="260" alt="Mark" />
+              <img
+                srcset="./images/mark-media@2x.jpg 2x"
+                width="264"
+                height="260"
+                src="./images/img-mark.jpg"
+                alt="Mark Photo"
+              />
+
               <div class="team-list__container">
                 <h3 class="team-list__name">Mark Guerrero</h3>
                 <p class="team-list__position">Product Designer</p>
@@ -248,7 +255,13 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img-tom.jpg" width="264" height="260" alt="Tom" />
+              <img
+                srcset="./images/tom-media@2x.jpg 2x"
+                width="264"
+                height="260"
+                src="./images/img-tom.jpg"
+                alt="Tom Photo"
+              />
               <div class="team-list__container">
                 <h3 class="team-list__name">Tom Ford</h3>
                 <p class="team-list__position">Frontend Developer</p>
@@ -282,7 +295,13 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img-camila.jpg" width="264" height="260" alt="Camila" />
+              <img
+                srcset="./images/camila-media@2x.jpg 2x"
+                width="264"
+                height="260"
+                src="./images/img-camila.jpg"
+                alt="Camila Photo"
+              />
               <div class="team-list__container">
                 <h3 class="team-list__name">Camila Garcia</h3>
                 <p class="team-list__position">Marketing</p>
@@ -317,7 +336,13 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/img-daniel.jpg" width="264" height="260" alt="Daniel" />
+              <img
+                srcset="./images/daniel-media@2x.jpg 2x"
+                width="264"
+                height="260"
+                src="./images/img-daniel.jpg"
+                alt="Camila Photo"
+              />
               <div class="team-list__container">
                 <h3 class="team-list__name">Daniel Wilson</h3>
                 <p class="team-list__position">UI Designer</p>
@@ -364,12 +389,20 @@
               <a href="#" class="gallery__link">
                 <div class="portfolio-wrap">
                   <img
-                    class="portfolio-wrap__image"
-                    src="./images/img-banking-app.jpg"
-                    width="360"
-                    height="300"
-                    alt="Banking-app"
+                    class="portfolio-img"
+                    srcset="
+                      ../images/MOB/app-bank-mob.jpg            288w,
+                      ../images/TABLET/app-bank-tablet.jpg      356w,
+                      ../images/DESKTOP/app-bank-desktop.jpg    360w,
+                      ../images/MOB/app-bank-mob@2x.jpg         576w,
+                      ../images/TABLET/app-bank-tablet@2x.jpg   712w,
+                      ../images/DESKTOP/app-bank-desktop@2x.jpg 720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                    src="./images/DESKTOP/app-bank-desktop@2x.jpg"
+                    alt="Banking App"
                   />
+
                   <div class="portfolio-text">
                     <p class="portfolio-text__text">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -387,11 +420,18 @@
               <a href="#" class="gallery__link">
                 <div class="portfolio-wrap">
                   <img
-                    class="portfolio-wrap__image"
-                    src="./images/img-payment.jpg"
-                    width="360"
-                    height="300"
-                    alt="courses"
+                    class="portfolio-img"
+                    srcset="
+                      ./images/MOB/pay-mob.jpg          288w,
+                      ./images/TABLET/pay-tablet.jpg    356w,
+                      ./images/DESKTOP/pay-desk.jpg     360w,
+                      ./images/MOB/pay-mob@2x.jpg       576w,
+                      ./images/TABLET/pay-tablet@2x.jpg 712w,
+                      ./images/DESKTOP/pay-desk@2x.jpg  720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                    src="./images/desktop/pay-desk.jpg"
+                    alt="Pay-App"
                   />
                   <div class="portfolio-text">
                     <p class="portfolio-text__text">
@@ -410,10 +450,17 @@
               <a href="#" class="gallery__link">
                 <div class="portfolio-wrap">
                   <img
-                    class="portfolio-wrap__image"
-                    src=" ./images/img-meditation.jpg "
-                    width="360"
-                    height="300"
+                    class="portfolio-img"
+                    srcset="
+                      ./images/MOB/laptop-mob.jpg          288w,
+                      ./images/TABLET/laptop-tablet.jpg    356w,
+                      ./images/DESKTOP/laptop-desk.jpg     360w,
+                      ./images/MOB/laptop-mob@2x.jpg       576w,
+                      ./images/TABLET/laptop-tablet@2x.jpg 712w,
+                      ./images/DESKTOP/laptop-desk@2x.jpg  720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                    src="./images/desktop/laptop-desk.jpg"
                     alt="Meditation"
                   />
                   <div class="portfolio-text">
@@ -433,11 +480,18 @@
               <a href="#" class="gallery__link">
                 <div class="portfolio-wrap">
                   <img
-                    class="portfolio-wrap__image"
-                    src=" ./images/img-taxi.jpg"
-                    width="360"
-                    height="300"
-                    alt="Taxi"
+                    class="portfolio-img"
+                    srcset="
+                      ../images/MOB/taxi-mob.jpg          288w,
+                      ../images/TABLET/taxi-tablet.jpg    356w,
+                      ../images/DESKTOP/taxi-desk.jpg     360w,
+                      ../images/MOB/taxi-mob@2x.jpg       576w,
+                      ../images/TABLET/taxi-tablet@2x.jpg 712w,
+                      ../images/DESKTOP/taxi-desk@2x.jpg  720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                    src="./images/desktop/taxi-desk.jpg"
+                    alt="Meditation"
                   />
                   <div class="portfolio-text">
                     <p class="portfolio-text__text">
@@ -456,11 +510,18 @@
               <a href="#" class="gallery__link">
                 <div class="portfolio-wrap">
                   <img
-                    class="portfolio-wrap__image"
-                    src="./images/img-screen.jpg "
-                    width="360"
-                    height="300"
-                    alt="Courses"
+                    class="portfolio-img"
+                    srcset="
+                      ./images/MOB/screen-mob.jpg          288w,
+                      ./images/TABLET/screen-tablet.jpg    356w,
+                      ./images/DESKTOP/screen-desk.jpg     360w,
+                      ./images/MOB/screen-mob@2x.jpg       576w,
+                      ./images/TABLET/screen-tablet@2x.jpg 712w,
+                      ./images/DESKTOP/screen-desk@2x.jpg  720w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                    src="./images/DESKTOP/screen-desk@2x.jpg"
+                    alt="Design"
                   />
                   <div class="portfolio-text">
                     <p class="portfolio-text__text">
