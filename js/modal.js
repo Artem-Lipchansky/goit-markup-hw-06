@@ -1,3 +1,7 @@
+
+
+// ======================================MODAL===========================================
+
 (() => {
     const refs = {
       openModalBtn: document.querySelector("[data-modal-open]"),
@@ -14,29 +18,22 @@
   })();
 
 
+// ==================================BURGER-MENU=============================================== 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var burgerMenuBtn = document.querySelector('.burger-menu-btn');
+    var burgerOverlay = document.querySelector('.burger-overlay');
+    var burgerCloseBtn = document.querySelector('.burger-close-btn');
 
+    burgerMenuBtn.addEventListener('click', toggleBurgerMenu);
+    burgerCloseBtn.addEventListener('click', toggleBurgerMenu);
 
-//   // Отримуємо всі кнопки для відкриття та закриття
-// const openButtons = document.querySelectorAll('[data-modal-open]');
-// const closeButtons = document.querySelectorAll('[data-modal-close]');
-// const overlay = document.querySelector('.burger-overlay');
-
-// // Функція для відкриття модального вікна
-// function openModal() {
-//   overlay.classList.add('is-open');
-// }
-
-// // Функція для закриття модального вікна
-// function closeModal() {
-//   overlay.classList.remove('is-open');
-// }
-
-// // Додаємо обробники подій для кожної кнопки
-// openButtons.forEach(button => {
-//   button.addEventListener('click', openModal);
-// });
-
-// closeButtons.forEach(button => {
-//   button.addEventListener('click', closeModal);
-// });
+    function toggleBurgerMenu() {
+        var isOpen = burgerOverlay.classList.contains('is-open');
+        if (isOpen) {
+            burgerOverlay.classList.remove('is-open');
+        } else {
+            burgerOverlay.classList.add('is-open');
+        }
+    }
+});
