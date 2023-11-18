@@ -1873,7 +1873,7 @@ fill:  var(--accent-color);
                .hero {
                    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                            rgba(46, 47, 66, 0.70)),
-                       url('../images/mob/Office-MOB-bg-2x.jpg');
+                       url('../images/MOB/Office-MOB-bg-2x.jpg');
                }
            }
 
@@ -2085,7 +2085,7 @@ fill:  var(--accent-color);
              padding: 112px 0;
              background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                      rgba(46, 47, 66, 0.70)),
-                 url('../images/tablet/Office-TABLET-bg.jpg');
+                 url('../images/TABLET/Office-TABLET-bg.jpg');
          }
 
         @media screen and (min-width: 768px) and (min-resolution: 192dpi),
@@ -2094,7 +2094,7 @@ fill:  var(--accent-color);
             .hero {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                         rgba(46, 47, 66, 0.70)),
-                    url('../images/tablet/Office-TABLET-bg-2x.jpg');
+                    url('../images/TABLET/Office-TABLET-bg-2x.jpg');
             }
         }
 
@@ -2295,7 +2295,7 @@ fill:  var(--accent-color);
               .hero {
                   background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                           rgba(46, 47, 66, 0.70)),
-                      url('../images/desktop/Office-DESK-bg-2x.jpg');
+                      url('../images/DESKTOP/Office-DESK-bg-2x.jpg');
               }
 
             }
