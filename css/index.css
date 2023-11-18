@@ -1888,7 +1888,7 @@ fill:  var(--accent-color);
       flex-direction: column;
       justify-content: space-between;
       padding: 72px 16px 40px 16px;
-      width: 320px;
+      width: auto;
       height: 100%;
       margin-left: auto;
       transform: translateX(100%);
